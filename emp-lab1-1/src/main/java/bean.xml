@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:aop="http://www.springframework.org/schema/aop"
+ xmlns:context="http://www.springframework.org/schema/context"
+ xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+  http://www.springframework.org/schema/aop https://www.springframework.org/schema/aop/spring-aop-4.3.xsd
+  http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context-4.3.xsd">
+
+<bean id="employee" class="com.cg1.Employee">
+ <property name="Id" value="19"></property>
+ <property name="Name" value="sindhu"></property>
+ <property name="salary" value="35000"></property>
+ <property name="bUnit" value="Analyst"></property>
+ <property name="age" value="24"></property>
+ <property name="sbu" ref="sb"></property>
+</bean>
+<bean id="sb" class="com.cg1.SBU">
+ <property name="sbuId" value="189"></property>
+ <property name="sbuName" value="sath"></property>
+ <property name="sbuHead" value="organizer"></property>
+</bean>
+
+</beans>
